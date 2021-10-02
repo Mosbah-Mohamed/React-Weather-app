@@ -24,7 +24,7 @@ const Temp = (props) => {
     console.log(city, country);
 
     const api = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`
     );
     const data = await api.json();
     console.log(data);
